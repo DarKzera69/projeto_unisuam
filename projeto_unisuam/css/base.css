@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    min-height: 100vh;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo img{
+    width: 280px;
+    margin-bottom: 3px;
+    margin-left: -50px;
+}
+nav {
+    padding: 0 50px;
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-one {
+    background-color: #31353B;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.left>div+div {
+    margin-left: 40px;
+}
+
+.right>div {
+    margin-left: 40px;
+}
+
+.left>div:hover,
+.right>div:hover,
+.navbar-one a:hover {
+    color: white;
+    transition: all 0.5s;
+}
+
+span {
+    margin-left: 5px;
+}
+
+.navbar-second {
+    background-color: #CA1C2A;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 20px black;
+    margin-bottom: 15px;
+}
+.navbar-second .text{
+    color: #fff;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-left: 36px;
+    color: black;
+    font-weight: 400;
+}
+
+section {
+    width: 100%;
+    height: 150vh;
+    background: url(../img/messi.jpg)no-repeat center center / cover;
+}
+
+.navbar-one a {
+    text-decoration: none;
+    color: white;
+}
+
+.customer-area {
+    width: 150px;
+    font-size: 16px;
+    border: 1px solid #484E57;
+    background-color: #484E57;
+    border-radius: 30px;
+    text-align: center;
+}
+.navbar-second ul li a{
+    transition: all ease 0.3s;
+}
+.navbar-second ul .submenu{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+  
+}
+.submenu li a{
+    margin-left: -40px;
+}
+.navbar-second ul li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+.navbar-second ul .submenu li{
+    margin: 0;
+    width: 100%;
+}
+.navbar-second ul .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+/* sombreado azul quando passar o mouse em cima*/
+/*Primeiro Menu*/
+.companies a:hover::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.wholesale a:hover::after {
+    content: '';
+    display: block;
+    width: 5.2rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.institutional a:hover::after {
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.whatsapp a:hover::after {
+    content: '';
+    display: block;
+    width: 6.5rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.faq a:hover::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.careers a:hover::after {
+    content: '';
+    display: block;
+    width: 4.6rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.contact a:hover::after {
+    content: '';
+    display: block;
+    width: 4.3rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/*SEGUNDO MENU*/
+/* Internet*/
+.internet a:hover::after {
+    content: '';
+    display: block;
+    width: 8.1rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.banda a:hover::after {
+    content: '';
+    display: block;
+    width: 5.7rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.wi-fi a:hover::after {
+    content: '';
+    display: block;
+    width: 2.6rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/* Telefonia*/
+.e1 a:hover::after {
+    content: '';
+    display: block;
+    width: 7.2rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.num a:hover::after {
+    content: '';
+    display: block;
+    width: 7.6rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.pabx a:hover::after {
+    content: '';
+    display: block;
+    width:7rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/* Rede e Infraestrutura*/
+.ponto a:hover::after {
+    content: '';
+    display: block;
+    width:7rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.mpls a:hover::after {
+    content: '';
+    display: block;
+    width:3rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.fibra a:hover::after {
+    content: '';
+    display: block;
+    width:7.8rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.co a:hover::after {
+    content: '';
+    display: block;
+    width:5.7rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/* Mobilidade*/
+.celular a:hover::after {
+    content: '';
+    display: block;
+    width:5.6rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.mvna a:hover::after {
+    content: '';
+    display: block;
+    width:4.2rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/* outras soluções*/
+.out a:hover::after {
+    content: '';
+    display: block;
+    width:7.5rem;
+    height: 0.2rem;
+    background: #0170B9;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+/*fim do sombreado*/
+.footer{
+    background-color: #31353B;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px -20px 45px #31353B;
+    margin-top: 50px;
+}
+.copy{
+    background-color: #212529;
+    height: 40px;
+    
+}
+.copy p{
+    color: grey;
+    padding-top: 5px;
+}
+.footer a{
+    color: white;
+}
+.about-footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: space-between;
+    text-align: justify;
+    
+}
+.about-footer img{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.about-footer .social-midia-footer svg{
+    margin: 10px;
+    
+}
+.info-footer h4, .other-footer h4,.contact-footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    text-align: justify;
+    margin-top: 50px;
+   
+    
+}
+.info-footer ul li,.other-footer ul li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 65px;
+    text-align: justify;
+
+   
+    
+}
+.info-footer a, .other-footer a{
+    margin-top: 15px;
+    margin-left: 0px;
+}
